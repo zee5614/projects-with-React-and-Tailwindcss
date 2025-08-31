@@ -1,0 +1,96 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [  "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",],
+  theme: { fontFamily: {
+      poppins: ["Poppins"],
+      "poppins-bold": ["Poppins Bold"],
+      "poppins-semi-bold": ["Poppins Semi Bold"],
+      "poppins-light": ["Poppins Light"],
+      "poppins-italic": ["Poppins Italic"],
+      quicksand: ["Quicksand"],
+      "quicksand-bold": ["Quicksand Bold"],
+      "quicksand-semi-bold": ["Quicksand Semi Bold"],
+      "quicksand-light": ["Quicksand Light"],
+      "dm-sans": ["DMSans"],
+      "dm-sans-bold": ["DMSans Bold"],
+      "dm-sans-semi-bold": ["DMSans Semi Bold"],
+      "dm-sans-light": ["DMSans Light"],
+    },
+    extend: { backgroundImage: {
+        element1: "url('/icons/bg-element.svg')",
+        element2: "url('/icons/bg-element2.svg')",
+        element3: "url('/icons/bg-element3.svg')",
+        element4: "url('/icons/bg-element4.svg')",
+        element5: "url('/icons/bg-element5.svg')",
+      },
+      backgroundColor: {
+        "green-darker": "rgb(0, 115, 73)",
+        "overlay-dark": "rgba(0, 0, 0, 0.7)",
+        "overlay-light-dark": "rgba(0, 0, 0, 0.6)",
+        "overlay-lighter": "rgba(0, 0, 0, 0.03)",
+        "blue-normal": "rgb(7, 34, 127 )",
+      },
+      keyframes: {
+        moveColors: {
+          "0%": { filter: "hue-rotate(0deg)" },
+          "100%": { filter: "hue-rotate(360deg)" },
+        },
+        wave: {
+          "0%": { transform: "rotate(0deg)" },
+          "10%": { transform: "rotate(14deg)" },
+          "20%": { transform: "rotate(-8deg)" },
+          "30%": { transform: "rotate(14deg)" },
+          "40%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(10deg)" },
+          "60%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
+      },
+
+      animation: {
+        moveColors: "moveColors 2.5s ease-in-out infinite",
+      },
+      colors: {
+        "purple-light-foundation": " rgb(255, 217, 251)",
+        "blue-normal-active": "rgb(7, 14, 127)",
+        "purple-light-hover": "rgb(225, 217, 251)",
+        "purple-normal-hover": "rgb(228, 0, 205)",
+        "purple-normal-active": "rgb(202, 0, 182)",
+        "purple-dark-hover": "rgb(152, 0, 137)",
+        "purple-dark": "rgb(190, 0, 171)",
+        "purple-darker": "rgb(89, 0, 80)",
+        "purple-academy": "rgba(244, 214, 243, 1)",
+        "black-a": "rgb(0, 0, 0)",
+        "black-b": "rgba(0, 0, 0, 0.8)",
+        "black-c": "rgba(0, 0, 0, 0.4)",
+        "black-d": "rgba(0, 0, 0, 0.5)",
+        "black-e": "rgba(88, 88, 88)",
+        "purple-b": "rgba(76, 22, 89, 0.41)",
+        "purple-f": "rgb(255, 245, 254)",
+        "white-a": "rgb(255, 255, 255)",
+        "white-b": "rgb(248, 250, 255)",
+        "custom-purple": "rgba(136, 15, 109, 0.9)",
+        gray: {
+          900: "#0f172a",
+          800: "#1e293b",
+          700: "#334155",
+        },
+      },
+      spacing: {
+        "8xl": "96rem",
+      },
+      boxShadow: {
+        "custom-purple": "0px 1px 1px rgba(136, 15, 109, 0.2)",
+        "custom-purple-hover": "0px 10px 20px rgba(136, 15, 109, 0.4)",
+        "custom-purple-active": "0px 10px 20px rgba(136, 15, 109, 0.6)",
+      },
+      clipPath: {
+        "custom-shape":
+          'path("M-1.02295 0H133.16C142.345 0 151.166 3.67752 157.737 10.2465L166.114 18.621C179.297 31.8004 200.184 32.3308 213.99 19.8368L225.931 9.03071C232.36 3.21188 240.647 0 249.23 0H380.023V59H-1.02295V0Z")',
+      },
+    },
+  },
+  plugins: [],
+}
+
